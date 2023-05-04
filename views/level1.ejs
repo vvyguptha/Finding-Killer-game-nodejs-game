@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Level 1</title>
+<style>
+  /* Set the background color to a dark shade of blue */
+body {
+  background-color: #1c2331;
+}
+
+/* Style the heading */
+h1 {
+  color: white;
+  font-size: 48px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 24px;
+  margin: 20px;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+}
+
+/* Style the input field and submit button */
+input[type="text"] {
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button[type="submit"] {
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff6666;
+}
+
+</style>
+</head>
+<body>
+  <h1>Level 1</h1>
+  <h1>Here's your first puzzle:</h1>
+  <h3>Detective Sarah was called to investigate a murder at a local library. The victim was found lying on the floor, surrounded by books. There were no witnesses, but Sarah found three suspects: the librarian, the victim's coworker, and a random patron.</h3>
+  <h3>Sarah interviewed each suspect and found the following clues:</h3><br>
+  <h4>1.The librarian said she saw the victim arguing with a coworker shortly before the murder.</h4>
+  <h4>2.The victim's coworker said she was in the break room at the time of the murder, eating a sandwich.</h4>
+  <h4>3.The patron said she saw a man with a green hat leave the library around the time of the murder.</h4>
+  <p>After analyzing the clues, Sarah was able to identify the killer. Can you figure out who it was?</p>
+  <p><%= clue1 %></p>
+  <form method="post" action="/level1">
+    <center><input type="text" name="answer1" placeholder="Enter your answer" autocomplete="off">
+    <button type="submit" style="border-radius: 5px;">Submit</button></center>
+  </form>
+</body>
+</html>

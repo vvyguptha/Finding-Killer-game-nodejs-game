@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Level 3</title>
+<style>
+  body {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 50px 0 20px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px #000;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 30px 0;
+  font-style: italic;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 50px 0 10px;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 50px 0 10px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px #000;
+  background-color: #fff;
+  color: #000;
+  margin-right: 10px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px #000;
+  background-color: #c41212;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #c41212;
+  box-shadow: 2px 2px #c41212;
+}
+
+</style>
+</head>
+<body>
+  <center><h1 style="color: red;">Level 3</h1></center>
+  <h2>Detective Alex was called to investigate a murder at a masquerade ball. The victim, a wealthy businessman named Mr. Black, was found dead in the ballroom, and several party guests were wearing masks that made it difficult to identify them. However, Alex found a series of riddles left behind by the killer that contained clues to their identity. Can you help Alex solve the riddles and identify the killer?</h2>
+  <p>Name of the guests :- Colonel Mustard,Mrs.White ,Mr. Plum,Mr. James</p>
+  <h3 ><strong style="color: red;">Riddle #1:</strong><br>
+    I have a face, but no eyes or mouth,<br>
+    I'm made of metal, and go from north to south.<br>
+    If you want to find the killer's name,
+    Go to the place where I am the same.</h3>
+  <h3><strong style="color: red;">Riddle #2:</strong><br>
+    I can be sharp or dull, short or long,<br>
+    I'm used in music to create a song.<br>
+    If you want to catch the killer's track,
+    Look for me on the victim's back.</h3>
+  <h3><strong  style="color: red;">Riddle #3:</strong><br>
+    I am a number, but not a prime,<br>
+    I'm also a place that's frozen in time.<br>
+    If you want to know who caused the strife,
+    Count the number of steps in their life.
+  </h3><br>
+  <h4>After solving the riddles, Alex was able to identify the killer. Can you figure out who it was?</h4>
+  <p><%= clue3 %></p>
+  <form method="post" action="/level3">
+    <center><input type="text" name="answer3" placeholder="Enter your answer" autocomplete="off">
+    <button type="submit">Submit</button></center>
+  </form>
+</body>
+</html>
