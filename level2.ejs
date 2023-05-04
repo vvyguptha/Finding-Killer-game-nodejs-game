@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Level 2</title>
+<style>
+  body {
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4, h5 {
+  color: red;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+form {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  width: 300px;
+}
+
+button[type="submit"] {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Additional styles for a thrilling feel */
+h1 {
+  text-shadow: 2px 2px 4px black;
+}
+
+h2{
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-left: 30px;
+}
+
+form {
+  box-shadow: 2px 2px 4px black;
+  padding: 20px;
+  width: 50%;
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button[type="submit"] {
+  box-shadow: 2px 2px 4px black;
+}
+h3{
+  padding: 20px;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+  <h1>Level 2</h1>
+  <h2 style="color: white;">Here's your second puzzle</h2>
+  <h3>Detective James was called to investigate a murder at a dinner party. The victim, Mr. Green, was found in the garden with a knife in his back. There were six guests at the party, each with a motive to kill Mr. Green. However, James found that each guest had an alibi for the time of the murder.<br><br><b> Here are the clues that James gathered:</b></h3>
+  <h4>1. Mrs. Scarlet said she was in the dining room, playing cards with Colonel Mustard, at the time of the murder.<br>
+
+    2. Colonel Mustard said he was in the dining room, playing cards with Mrs. Scarlet, at the time of the murder.<br>
+    
+    3. Mrs. White said she was in the kitchen, preparing dessert, at the time of the murder.<br>
+    
+    4. Mr. Plum said he was in the lounge, reading a book, at the time of the murder.<br>
+    
+    5.Miss Peacock said she was in the conservatory, admiring the flowers, at the time of the murder.<br>
+    
+    6. Professor Plum said he was in the study, grading papers, at the time of the murder.<br>
+    
+    </h4><br><br>
+    <h5>Despite the alibis, Detective James was able to solve the case and identify the killer. Can you figure out who it was?</h5>
+  <p><%= clue2 %></p>
+  <form method="post" action="/level2">
+    <input type="text" name="answer2" placeholder="Enter your answer" autocomplete="off">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
